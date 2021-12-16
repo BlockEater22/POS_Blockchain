@@ -1,0 +1,24 @@
+import time
+import copy
+
+
+class Block():
+
+    def __init__(self, transactions, lastHash, forger, blockCount):
+    """this is a constructor cantaining the details of every block like blockcount,transaction in that block,ha of previous block,tiestamp,forger,forgers public key"""
+
+    @staticmethod
+    def genesis():
+    """this is a static method function containing data of genesisBlock"""
+
+    def toJson(self):
+    """This Method contain the converts the block data to json format"""
+        
+
+    def payload(self):
+    """this Method is coping the json function"""
+        
+
+    def sign(self, signature):
+    """ this function just take signuture"""
+        

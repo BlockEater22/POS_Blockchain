@@ -1,0 +1,135 @@
+POS Blockchain
+1.AccountModel
+	b)addAccount()
+	c)getBalance()
+	d)updateBalance()
+
+2.Block
+	a)genesis()--@staticmethod
+	b)toJson()
+	c)payload()
+	d)sign()
+
+3.Blockchain
+	a)addBlock()
+	b)toJson()
+	c)blockCountValid()
+	d)lastBlockHashValid()
+	e)getCoveredTransactionSet()
+	f)transactionCovered()
+	g)executeTransactio()
+	h)executeTransaction()
+	i)nextForger()
+	j)createBlock()
+	k)transactionExists()
+	l)forgerValid()
+	m)transactionValid()
+
+4.BlockchainUtils
+	a)hash() .. @staticmethod
+	b)encode() ..@staticmethod
+	c)decode() ..@staticmethod
+
+5.Interaction
+	a)postTransaction()
+
+6.Lot
+	a)lotHash()
+
+7.Main
+	main file to run
+
+8.Message
+	Constructor Method(self,senderConnector, messageType,data)
+
+9.Node
+	a)startP2P()
+	b)startAPI()
+	c)handletransaction()
+	d)handleBlock()
+	e)handleBlockchainRequest()
+	f)handleBlockchain()
+	g)forge()
+	h)requestChain()
+
+10.NodeAPI
+	all routes in browser
+
+11.PeerDiscoveryHandler
+	a)status()
+	b)discovery()
+	c)handshake()
+	d)handshakeMessage()
+	e)handleMessage()
+
+12.ProofOfStake
+	a)setGenesisNodeStake()
+	b)update()
+	c)get()
+	d)validatorLots()
+	e)winnerlot()
+	f)forger()
+
+13.SocketCommunication
+	a)connectToFirstNode()
+	b)startSocketCommunication()
+	c)inbound_node_connected()
+	d)outbound_node_connected()
+	e)node_message()
+	f)send()
+	g)broadcast()
+
+14.SocketConnector
+	a)equals()
+
+15.Test
+	a)getRandomString()
+
+16.Transaction
+	a)toJson()
+	b)sign()
+	c)payload()
+	d)equals()
+
+17.TransactionPool
+	a)addTransaction()
+	b)transactionExists()
+	c)removeFromPool()
+	d)forgingRequired()
+
+18.Wallet
+	a)fromKey()
+	b)sign()
+	c)signatureValid() ..@staticmethod
+	d)publicKeyString()
+	e)createTransaction()
+	f)createBlock()
+
+
+commands to run the code
+
+-In Main file( first console):  python main.py localhost 10001 5000 keys/genesisPrivateKey.pem
+
+-In Alace console(second console): python main.py localhost 10003 5003 keys/stakerPrivateKey.pem 
+
+-In Bob console(third console): python main.py localhost 10002 5001 
+
+-In fourth console: python Interaction.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

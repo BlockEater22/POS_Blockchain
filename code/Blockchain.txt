@@ -1,0 +1,61 @@
+from Block import Block
+from BlockchainUtils import BlockchainUtils
+from AccountModel import AccountModel
+from ProofOfStake import ProofOfStake
+
+
+class Blockchain():
+
+    def __init__(self):
+    """This constructor function is to connect all blocks in a chain"""
+        
+    
+
+    def addBlock(self, block):
+    """after the transaction has been done this function add that transaction to a block"""
+        
+
+    def toJson(self):
+    """This ethdo function is to convert blocks data to json and adding it to blockchain json data """
+
+    def blockCountValid(self, block):
+    """ This Method count the number of blockchain and reture true or false"""
+
+    def lastBlockHashValid(self, block):
+    """This Method counchecks the last blocks hash of blockchain and reture true or false"""
+        
+
+    def getCoveredTransactionSet(self, transactions):
+    """this Method checks the transaction is covered by sender if yes the add it to list and returns the list"""
+        
+
+    def transactionCovered(self, transaction):
+    """This Method check the type of  Transaction and check the balance of sender greater then transaction amount"""
+        
+
+    def executeTransactions(self, transactions):
+    """this Method execute transactions"""
+    
+
+    def executeTransaction(self, transaction):
+    """this Method execute single transaction by checking the details of transaction"""
+
+    def nextForger(self):
+    """this Method chooses the next forger for the block"""
+        
+
+    def createBlock(self, transactionsFromPool, forgerWallet):
+    """this Method creates the new block by taking all the transactions From Pool"""
+        
+
+    def transactionExists(self, transaction):
+    """This Method checks if the transaction exist in block"""
+       
+
+    def forgerValid(self, block):
+    """This Mathod checks forgers is valid or not"""
+        
+
+    def transactionsValid(self, transactions):
+    """This Mathod checks the number of valid transaction"""
+        

@@ -1,0 +1,10 @@
+1.How can we take this blockchain to browser?
+2.In this POS all the data are static how can we make them dynamic?
+3.How can we generate key pair and use them dynamically with wallet?
+4.How to connect the new node to this blockchain?
+5.Where does the Stakers data is been store?
+6.if staker want,how can he redeem back his stake if he wish?
+7.for how long does staker need to stake eg.min-72hrs max-3years
+8.how much reward does staker is getting after valadating a block 
+9.what is the maximum and minimum stake a staker need do for participating?
+10.where is the wallet data stored?
